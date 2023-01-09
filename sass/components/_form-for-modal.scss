@@ -1,0 +1,172 @@
+.forma {
+    width: 448px;
+    }
+    
+    .form__input {
+        width: 100%;
+        height: 40px;
+        margin: 0px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 42px;
+        @include general-font (0.01em, 1.17, 12px, 400);
+        font-style: normal;
+        
+    }
+    .form__field {
+        position: relative;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:focus-within .form__input,
+        &:hover .form__input {
+            border: 1px solid $color-accent;
+            outline: none;
+        }
+        &:focus-within .form__icon-label,
+        &:hover > .form__icon-label {
+            color:$color-accent;
+        }
+        }
+
+    
+    .form__text {
+        width: 100%;
+        color: $color-primary;
+        margin-bottom: 12px;
+        @include general-font (0.03em, 1.15, 20px, 700);
+        text-align: center;
+    }
+    textarea {
+        padding-top: 12px;
+        padding-left: 12px;
+    
+        resize: none;
+        width: 100%;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         }
+         
+    .form__field-textarea {
+    margin-bottom: 20px;
+    cursor: pointer;
+        &:focus-within textarea,
+        &:hover textarea {
+        border: 1px solid $color-accent;
+        outline: none;
+        }
+    }
+      textarea:placeholder-shown {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }
+    .form__name-label { 
+        display: block;
+        margin-bottom: 4px;
+        @include general-font (0.01em, 1.17, 12px, 400);
+    }
+    .form__button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .form__send-button {
+        color: #FFFFFF;
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        @include general-font (0.06em, 1.88, 16px, 700);
+        cursor: pointer;
+        border: 1px transparent;
+        border-radius: 4px;
+        padding: 10px 32px;
+        min-width: 200px;
+        text-align: center;
+    }
+    
+    
+    .form__contract {
+        color: $color-accent;
+        text-decoration-line: underline;
+        margin-left: 5px;
+    }
+    
+    /* icon-label */
+    
+    .form__icon-label {
+        position: absolute;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        bottom: 11px;
+        left: 12px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: $color-primary;
+        fill:currentColor
+    }
+    
+    
+    /* checkbox */
+    .form__checkbox {
+        position: absolute;
+        --webkit-appearance: none;
+        --moz-appearance: none;
+        appearance: none;
+    }
+    .form__new-checkbox {
+        display: flex;
+        height: 15px;
+        width: 16px;
+        border: 2px solid $color-primary;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-right: 7px;
+        align-items: center;
+        justify-content: center; 
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .form__conditions {
+        display: flex;
+        color: $color-secondary;
+        width: 423px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        margin-right: auto;
+        margin-left: auto;
+
+        @media screen and (max-width: 1199px) {
+            @include general-font (0.03em, 1.17, 12px, 400);
+        }
+        @media screen and (min-width: 1200px) {
+            @include general-font (0.03em, 1.71, 14px, 400);
+        }
+
+        &:focus-within .form__new-checkbox,
+        &:hover .form__new-checkbox { 
+        border: 1px solid $color-accent;
+    }
+    }
+    
+    
+    
+    .form__checkbox:checked + .form__new-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        background-color: $color-accent;
+        background-size: contain;
+        border: 0px solid $color-accent;
+    }
+    .form__icon-checkbox {
+            fill:currentColor
+    }

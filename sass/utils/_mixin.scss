@@ -1,0 +1,69 @@
+@mixin general-font ($em, $line-height, $font-size, $font-weight) {
+    font-weight: $font-weight;
+    font-size: $font-size; 
+    line-height: $line-height;
+    letter-spacing: $em;
+}
+// @mixin nav-font () {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+// }
+// @mixin hero-textFont () {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     text-align: center;
+// }
+// @mixin button-font () {
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+// }
+// @mixin h3-font () {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+// }
+// @mixin title-section () {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+// }
+// @mixin button__product () {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.62;
+// }
+
+// @mixin overley () {
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: height 1.56;
+// }
+// @mixin product_title () {
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 2.00;
+//     letter-spacing: 0.06em;
+// }
+// @mixin product_text () {
+//     font-size: 16px;
+//     line-height: 1.88;
+// }
+// @mixin form__input () {
+        
+//         font-weight: 400;
+//         font-size: 12px;
+//         line-height: 1.17;
+//         letter-spacing: 0.01em;
+// }
+// @mixin form__text () {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.15;
+// }

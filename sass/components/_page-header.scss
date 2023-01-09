@@ -1,0 +1,140 @@
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.conteiner__header {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+}
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+.site-nav__link.current {
+    color: $color-accent;
+}
+.site-nav {
+    display: flex;
+    
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+    }
+
+}
+.site-nav__list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+       display: flex;
+}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+.site-nav__item {
+    margin-right: 50px;
+    &:last-child {
+    margin-right: 0px;}
+}
+
+.site-nav__link {
+    display: flex;
+    color: $color-primary;
+    @include general-font (0.02em, 1.14, 14px, 500);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    &:hover, &:focus {
+    outline: none;
+    color: $color-accent;}
+}
+
+
+.contacts {
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+       display: block;
+}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+.contacts__item {
+@media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+}
+&:last-child {
+    margin-bottom: 0px;
+    }
+
+@media screen and (min-width: 1200px) {
+    margin-right: 30px;
+}
+
+    &:last-child {
+    margin-right: 0px;
+    }
+}
+.contacts__link {
+    display: flex;
+    align-items: center;
+    color: $color-secondary;
+    @include general-font (0.02em, 1.14, 14px, 500);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &:hover, &:focus {
+    outline: none;
+    color: $color-accent;
+    }
+}
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.current {
+    position: relative;
+    color: $color-accent;
+}
+
+    .current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $color-accent;
+    border-radius: 2px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+

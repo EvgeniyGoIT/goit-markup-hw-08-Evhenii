@@ -1,0 +1,56 @@
+.site-nav__logo {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    color: $color-primary;
+    font-family: 'Raleway', cursive;
+    font-weight: 700;
+    
+    @media screen and (min-width: 480px) {
+        font-size: 24px;
+        line-height: 1.17; 
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 93px;
+        font-size: 24px;
+        line-height: 1.17;
+}
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.web {
+    color: #2196F3;
+   }
+
+.footer__logo {
+    color: $color--accent-text;
+    font-family: $font-logo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+    
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-bottom: 28px;
+        line-height: 1.17; 
+    }
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 28px;
+        font-size: 24px;
+        line-height: 1.17;
+}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}

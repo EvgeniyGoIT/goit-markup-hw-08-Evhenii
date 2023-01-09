@@ -1,0 +1,22 @@
+// button
+.menu-toggle {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+     @media screen and (min-width: 768px) {
+        display: none;
+     }
+}
+.icon-cross {
+    display: none;
+}
+.menu-toggle.js-open-menu .icon-cross {
+    display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+    display: none;
+}

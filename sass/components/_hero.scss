@@ -1,0 +1,97 @@
+.hero {
+    background-color: $color-background;
+    text-align: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/img.jpg);
+    background-size: cover;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        height: 400px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        height: 400px;
+}
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Header\ 480@1.jpg);
+}
+@media (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Header\ 480@2.jpg);
+  }
+}
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Header\ 768@1.jpg);
+    }
+    @media
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Header\ 768@2.jpg);
+      }
+    }
+    }
+    @media screen and (min-width: 1200px) {
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Img1600px@1.jpg);
+        }
+        @media (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/Img1600px@2.jpg);
+          }
+        }
+        }   
+
+
+
+.hero__title {
+    max-width: 696px;
+    color:$color--accent-text;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        @include general-font (0.06em, 1.66, 26px, 900);
+    }
+
+    @media screen and (min-width: 768px) {
+        @include general-font (0.06em, 1.66, 26px, 900);
+}
+    @media screen and (min-width: 1200px) {
+        @include general-font (0.06em, 1.36, 44px, 900);
+    }
+}
+
+.hero__button {
+    color: $color--accent-text;
+    background-color: $color-accent;
+    @include general-font (0.06em, 1.88, 16px, 700);
+    cursor: pointer;
+    border: 1px transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+}

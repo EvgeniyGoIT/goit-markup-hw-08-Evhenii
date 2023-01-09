@@ -1,0 +1,70 @@
+.clients {
+    text-align: center;
+    color:$color-primary;
+    margin-bottom: 50px;
+    @include general-font (0.03em, 1.17, 36px, 700);
+}
+.clients__list {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: $color-icon;
+    cursor: pointer;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+}
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+
+    &:focus, &:hover {
+    color: $color-accent;
+    border: 1px solid $color-accent;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clients__item {
+        width: calc(100% - 4 * 15px) /2;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .clients__item {
+        width: calc(100% - 6 * 15px) /3;
+        margin: 15px;
+    }
+}
+
+
+.clients__logo {
+    fill: currentColor;
+    height: 60px;
+    width: 106px;
+}
