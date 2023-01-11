@@ -20,13 +20,13 @@
                 <a href="" class="site-nav__logo"><span class="web">Web</span>Studio</a>
                   <div class="mobile-menu">
                     <button
-                      class="menu-toggle"
+                      class="menu-toggle "
                       aria-expanded="false"
                       aria-controls="mobile-menu"
                     >
                     <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
-                      <use class="icon-menu" href="./images/symbol-defs.svg#menu_40px"></use>
-                      <use class="icon-cross" href="./images/symbol-defs.svg#close_40px"></use>
+                      <use class="icon-menu js-open-menu" href="./images/symbol-defs.svg#menu_40px"></use>
+                      <use class="icon-cross js-open-menu" href="./images/symbol-defs.svg#close_40px"></use>
                     </svg>
                     </button>
 <!-- 
@@ -76,6 +76,13 @@
         </div>
     </header>
     <main>
+      <div class="menu-conteiner js-menu-container" id="modile-menu">
+        <button class="menu-toggle">
+          <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#close_40px"></use>
+          </svg>
+        </button>
+      </div>
         <section class="hero">
             <div class="conteiner">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
