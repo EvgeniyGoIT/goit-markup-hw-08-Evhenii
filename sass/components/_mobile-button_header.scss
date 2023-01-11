@@ -6,17 +6,111 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
      @media screen and (min-width: 768px) {
         display: none;
      }
-}
-.icon-cross {
-    display: none;
-}
-.menu-toggle.js-open-menu .icon-cross {
-    display: block;
+
+     &:hover, &:focus {
+        color: $color-accent;
+        }
 }
 
-.menu-toggle.js-open-menu .icon-menu {
-    display: none;
+.menu-conteiner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    
+    padding: 48px 40px;
+    background-color: $color--accent-text;
+
+    transform: translateY(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+     }
+}
+.menu-conteiner.is-open {
+    transform: translateY(0%);
+}
+
+.menu-toggle.js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu__list {
+    @include general-font (0.02em, 1.18, 40px, 500);
+}
+.menu__item {
+    margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.menu__link {
+    color: $color-primary;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $color-accent;
+        cursor: pointer;}
+}
+
+
+
+
+
+
+.menu__contacts-soc {
+   margin-top: 306px;
+}
+
+.menu__contacts {
+    margin-bottom: 64px;
+}
+.menu__contacts-item {
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom:0;
+    }
+}
+
+.contacts__link-tel {
+    color: $color-accent;
+    @include general-font (0.02em, 1.18, 34px, 500);
+}
+.contacts__link-email{
+    color: $color-secondary;
+    @include general-font (0.02em, 1.17, 24px, 500);
+}
+
+
+
+.menu__soc-list {
+    display: flex;
+}
+
+.menu__soc-item {
+    padding: 0px 10px; 
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);  
+    }
+}
+.menu__soc-link {
+    color:$color-accent;
+    @include general-font (0.02em, 1.22, 18px, 500);
+}
+
+.header__icon {
+    fill: currentColor;
 }

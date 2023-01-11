@@ -20,34 +20,15 @@
                 <a href="" class="site-nav__logo"><span class="web">Web</span>Studio</a>
                   <div class="mobile-menu">
                     <button
-                      class="menu-toggle "
+                      class="menu-toggle js-open-menu"
                       aria-expanded="false"
                       aria-controls="mobile-menu"
                     >
                     <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
-                      <use class="icon-menu js-open-menu" href="./images/symbol-defs.svg#menu_40px"></use>
-                      <use class="icon-cross js-open-menu" href="./images/symbol-defs.svg#close_40px"></use>
+                      <use href="./images/symbol-defs.svg#menu_40px"></use>
                     </svg>
                     </button>
-<!-- 
-                    <ul class="menu__list">
-                      <li class="menu__item">
-                        <a href="./index.html" class="menu__link">Студія</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./portfolio.html" class="menu__link">Портфоліо</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Контакти</a>
-                    </ul> -->
                   </div>
-
-                <!-- <button type="button" class="header__button is-open">
-                  <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
-                    <use class="icon-menu" href="./images/symbol-defs.svg#menu_40px"></use>
-                    <use class="icon-cross" href="./images/symbol-defs.svg#close_40px"></use>
-                  </svg>
-                </button> -->
 
                     <ul class="site-nav__list">
                         <li class="site-nav__item">
@@ -76,13 +57,49 @@
         </div>
     </header>
     <main>
+
+
       <div class="menu-conteiner js-menu-container" id="modile-menu">
-        <button class="menu-toggle">
+        <button class="menu-toggle js-close-menu">
           <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
-            <use class="icon-cross" href="./images/symbol-defs.svg#close_40px"></use>
+            <use href="./images/symbol-defs.svg#close_40px"></use>
           </svg>
         </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link">Студія</a>
+        </li>
+        <li class="menu__item">
+            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">Контакти</a>
+        </ul>
+        <div class="menu__contacts-soc">
+          <ul class="menu__contacts">
+            <li class="menu__contacts-item"><a href="tel:+380961111111" class="contacts__link-tel">
+              +38 096 111 11 11</a></li>
+            <li class="menu__contacts-item"><a href="mailo:info@devstudio.com" class="contacts__link-email">
+              @devstudio.com</a></li>
+          </ul>
+          <ul class="menu__soc-list">
+            <li class="menu__soc-item">
+              <a href="" class="menu__soc-link">Instagram</a>
+            </li>
+            <li class="menu__soc-item">
+              <a href="" class="menu__soc-link">Twitter</a>
+            </li>
+            <li class="menu__soc-item">
+              <a href="" class="menu__soc-link">Facebook</a>
+            </li>
+            <li class="menu__soc-item">
+              <a href="" class="menu__soc-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+
         <section class="hero">
             <div class="conteiner">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>

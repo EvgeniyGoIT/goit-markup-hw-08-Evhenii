@@ -1459,21 +1459,119 @@ textarea:placeholder-shown {
   border: none;
   background-color: transparent;
   margin-left: auto;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-
-.icon-cross {
-  display: none;
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #2196F3;
 }
 
-.menu-toggle.js-open-menu .icon-cross {
-  display: block;
+.menu-conteiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  padding: 48px 40px;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-conteiner {
+    display: none;
+  }
 }
 
-.menu-toggle.js-open-menu .icon-menu {
-  display: none;
+.menu-conteiner.is-open {
+  transform: translateY(0%);
+}
+
+.menu-toggle.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu__list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.menu__item {
+  margin-bottom: 32px;
+}
+.menu__item:last-child {
+  margin-bottom: 0px;
+}
+
+.menu__link {
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__link:hover, .menu__link:focus {
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.menu__contacts-soc {
+  margin-top: 306px;
+}
+
+.menu__contacts {
+  margin-bottom: 64px;
+}
+
+.menu__contacts-item {
+  margin-bottom: 32px;
+}
+.menu__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__link-tel {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.contacts__link-email {
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.menu__soc-list {
+  display: flex;
+}
+
+.menu__soc-item {
+  padding: 0px 10px;
+}
+.menu__soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__soc-link {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.header__icon {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
