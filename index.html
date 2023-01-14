@@ -22,7 +22,7 @@
                     <button
                       class="menu-toggle js-open-menu"
                       aria-expanded="false"
-                      aria-controls="mobile-menu"
+                      aria-controls="modile-menu"
                     >
                     <svg class="header__icon" width="40" height="40" aria-label="перемикач мобільного меню">
                       <use href="./images/symbol-defs.svg#menu_40px"></use>
@@ -47,7 +47,7 @@
                 <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#envelope"></use>
                 </svg>
-                @devstudio.com</a></li>
+                info@devstudio.com</a></li>
               <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
                 <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#smartphone"></use>
@@ -67,7 +67,7 @@
         </button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="./index.html" class="menu__link">Студія</a>
+            <a href="./index.html" class="menu__link  current-menu">Студія</a>
         </li>
         <li class="menu__item">
             <a href="./portfolio.html" class="menu__link">Портфоліо</a>
@@ -80,7 +80,7 @@
             <li class="menu__contacts-item"><a href="tel:+380961111111" class="contacts__link-tel">
               +38 096 111 11 11</a></li>
             <li class="menu__contacts-item"><a href="mailo:info@devstudio.com" class="contacts__link-email">
-              @devstudio.com</a></li>
+              info@devstudio.com</a></li>
           </ul>
           <ul class="menu__soc-list">
             <li class="menu__soc-item">
@@ -195,14 +195,13 @@
             <div class="conteiner">
                 <h2 class="team-section__title">Наша команда</h2>
                 <ul class="team-section__list">
-                    <li class="team-section__item">
-                        <img 
-                        srcset="./images/designer.jpg 270w,
-                        ./images/team354px1.jpg 354w,
-                        ./images/team450px1.jpg 450w"
-                        src="./images/designer.jpg" alt="фото Ігор Дем'яненко"
-                        sizes="100vw">
-
+                    <li class="team-section__item"> 
+                      <picture>
+                        <source srcset="./images/team450px1.jpg" media="(max-width: 767px)" />
+                        <source srcset="./images/team354px1.jpg" media="(max-width: 1199px)" />
+                        <source srcset="./images/designer.jpg" media="(min-width: 1200px)" />
+                        <img src="./images/designer.jpg" alt="фото Ігор Дем'яненко" />
+                      </picture>
                         <div class="info">
                             <h3 class="info__name">Ігор Дем'яненко</h3>
                             <p lang="en" class="info__jod">Product Designer</p>
@@ -239,13 +238,12 @@
                             </div>         
                     </li>
                     <li class="team-section__item">
-                        <img 
-                        srcset="./images/designer.jpg 270w,
-                        ./images/team354px2.jpg 354w,
-                        ./images/team450px2.jpg 450w"
-                        src="./images/developer.jpg" alt="фото Ольга Рєпіна"
-                        sizes="100vw">
-                        
+                      <picture>
+                        <source srcset="./images/team450px2.jpg" media="(max-width: 767px)" />
+                        <source srcset="./images/team354px2.jpg" media="(max-width: 1199px)" />
+                        <source srcset="./images/developer.jpg" media="(min-width: 1200px)" />
+                        <img src="./images/developer.jpg" alt="фото Ольга Рєпіна" />
+                      </picture>
                         <div class="info">
                             <h3 class="info__name">Ольга Рєпіна</h3>
                             <p lang="en" class="info__jod">Frontend Developer</p>
@@ -282,13 +280,12 @@
                             </div>         
                     </li>
                     <li class="team-section__item">
-                        <img
-                        srcset="./images/designer.jpg 270w,
-                        ./images/team354px3.jpg 354w,
-                        ./images/team450px3.jpg 450w"
-                        src="./images/marketing.jpg" alt="фото Микола Тарасов"
-                        sizes="100vw">
-                        
+                      <picture>
+                        <source srcset="./images/team450px3.jpg" media="(max-width: 767px)" />
+                        <source srcset="./images/team354px3.jpg" media="(max-width: 1199px)" />
+                        <source srcset="./images/marketing.jpg" media="(min-width: 1200px)" />
+                        <img src="./images/marketingr.jpg" alt="фото Микола Тарасов" />
+                      </picture>
                         <div class="info">
                             <h3 class="info__name">Микола Тарасов</h3>
                             <p lang="en" class="info__jod">Marketing</p>
@@ -325,13 +322,12 @@
                             </div>         
                     </li>
                     <li class="team-section__item">
-                        <img
-                        srcset="./images/designer.jpg 270w,
-                        ./images/team354px4.jpg 354w,
-                        ./images/team450px4.jpg 450w"
-                        src="./images/uidesigner.jpg" alt="фото Михайло Єрмаков"
-                        sizes="100vw">
-
+                      <picture>
+                        <source srcset="./images/team450px4.jpg" media="(max-width: 767px)" />
+                        <source srcset="./images/team354px4.jpg" media="(max-width: 1199px)" />
+                        <source srcset="./images/uidesigner.jpg" media="(min-width: 1200px)" />
+                        <img src="./images/uidesigner.jpg" alt="фото Микола Тарасов" />
+                      </picture>
                         <div class="info">
                             <h3 class="info__name">Михайло Єрмаков</h3>
                             <p lang="en" class="info__jod">UI Designer</p>

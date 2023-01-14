@@ -49,14 +49,14 @@
             <svg class="contacts__icon" width="16" height="12">
               <use href="./images/symbol-defs.svg#envelope"></use>
             </svg>
-            @devstudio.com</a></li>
+            info@devstudio.com</a></li>
           <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
             <svg class="contacts__icon" width="10" height="16">
               <use href="./images/symbol-defs.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a></li>
         </ul>
-    </div>
+    </div> 
 </header>
     <main>
       <div class="menu-conteiner js-menu-container" id="modile-menu">
@@ -70,7 +70,7 @@
             <a href="./index.html" class="menu__link">Студія</a>
         </li>
         <li class="menu__item">
-            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+            <a href="./portfolio.html" class="menu__link  current-menu">Портфоліо</a>
         </li>
         <li class="menu__item">
             <a href="" class="menu__link">Контакти</a>
@@ -115,13 +115,13 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                        srcset="./images/img1.jpg 370w,
-                        ./images/portf354px1.jpg 354w,
-                        ./images/portf450px1.jpg 450w"
-                        src="./images/img1.jpg" alt="Технокряк"
-                        sizes="100vw">
-                </div>
+                  <picture>
+                    <source srcset="./images/portf450px1.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px1.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img1.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img1.jpg" alt="Технокряк" />
+                  </picture>
+                  </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Технокряк</h2>
                   <p class="product__text">Веб-сайт</p>
@@ -135,12 +135,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img2.jpg 370w,
-                  ./images/portf354px2.jpg 354w,
-                  ./images/portf450px2.jpg 450w"
-                  src="./images/img2.jpg" alt="Постер New Orlean vs Golden Star"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px2.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px2.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img2.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img2.jpg" alt="Постер New Orlean vs Golden Star" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Постер New Orlean vs Golden Star</h2>
@@ -155,12 +155,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img3.jpg 370w,
-                  ./images/portf354px3.jpg 354w,
-                  ./images/portf450px3.jpg 450w"
-                  src="./images/img3.jpg" alt="Ресторан Seafood"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px3.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px3.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img3.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img3.jpg" alt="Ресторан Seafood" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Ресторан Seafood</h2>
@@ -175,12 +175,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img4.jpg 370w,
-                  ./images/portf354px4.jpg 354w,
-                  ./images/portf450px4.jpg 450w"
-                  src="./images/img4.jpg" alt="Проєкт Prime"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px4.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px4.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img4.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img4.jpg" alt="Проєкт Prime" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Проєкт Prime</h2>
@@ -195,12 +195,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img5.jpg 370w,
-                  ./images/portf354px5.jpg 354w,
-                  ./images/portf450px5.jpg 450w"
-                  src="./images/img5.jpg" alt="Проєкт Boxes"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px5.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px5.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img5.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img5.jpg" alt="Проєкт Boxes" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Проєкт Boxes</h2>
@@ -215,12 +215,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img6.jpg 370w,
-                  ./images/portf354px6.jpg 354w,
-                  ./images/portf450px6.jpg 450w"
-                  src="./images/img6.jpg" alt="Inspiration has no Borders"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px6.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px6.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img6.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img6.jpg" alt="Inspiration has no Borders" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Inspiration has no Borders</h2>
@@ -235,12 +235,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img7.jpg 370w,
-                  ./images/portf354px7.jpg 354w,
-                  ./images/portf450px7.jpg 450w"
-                  src="./images/img7.jpg" alt="Видання Limited Edition"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px7.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px7.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img7.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img7.jpg" alt="Видання Limited Edition" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Видання Limited Edition</h2>
@@ -255,12 +255,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img8.jpg 370w,
-                  ./images/portf354px8.jpg 354w,
-                  ./images/portf450px8.jpg 450w"
-                  src="./images/img8.jpg" alt="Проєкт LAB"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px8.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px8.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img8.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img8.jpg" alt="Проєкт LAB" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Проєкт LAB</h2>
@@ -275,12 +275,12 @@
                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-                  <img
-                  srcset="./images/img9.jpg 370w,
-                  ./images/portf354px9.jpg 354w,
-                  ./images/portf450px9.jpg 450w"
-                  src="./images/img9.jpg" alt="Growing Business"
-                  sizes="100vw">
+                  <picture>
+                    <source srcset="./images/portf450px9.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/portf354px9.jpg" media="(max-width: 1199px)" />
+                    <source srcset="./images/img9.jpg" media="(min-width: 1200px)" />
+                    <img src="./images/img9.jpg" alt="Growing Business" />
+                  </picture>
                 </div>
                 <div class="product__content-text">
                   <h2 class="product__title">Growing Business</h2>
@@ -293,7 +293,8 @@
       </section>
     </main>
     <footer class="footer">
-        <div class="footer__conteiner">
+      <div class="footer__conteiner">
+          <div class="footer-for-tablet">
             <div class="footer__logo-address">
               <a href="" class="footer__logo"><span class="web">Web</span>Studio</a>
             <address>
@@ -343,21 +344,22 @@
                 </li>
               </ul>
             </div>
-            <form class="footer__connection">
-              <p class="connection__text">ПІДПИШІТСЯ НА РОЗСИЛКУ</p>
-              <div class="connection__input-box">
-                <input type="email" name="email" class="connection__input" placeholder="E-mail">
-                  <div class="connection__button-box">
-                    <button type="submit" class="connection__button">Підписатися
-                      <svg class="connection__send-icon">
-                        <use href="./images/symbol-defs.svg#send"></use>
-                      </svg>
-                    </button>
-                  </div>
-              </div>
-            </form>
-        </div>
-    </footer>
+          </div>
+          <form class="footer__connection">
+            <p class="connection__text">ПІДПИШІТСЯ НА РОЗСИЛКУ</p>
+            <div class="connection__input-box">
+              <input type="email" name="email" class="connection__input" placeholder="E-mail">
+                <div class="connection__button-box">
+                  <button type="submit" class="connection__button">Підписатися
+                    <svg class="connection__send-icon">
+                      <use href="./images/symbol-defs.svg#send"></use>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+          </form>
+      </div>
+  </footer>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

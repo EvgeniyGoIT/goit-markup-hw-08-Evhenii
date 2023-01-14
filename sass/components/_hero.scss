@@ -75,13 +75,12 @@
     margin-right: auto;
 
     @media screen and (min-width: 480px) {
+        max-width: 360px;
         @include general-font (0.06em, 1.66, 26px, 900);
     }
 
-    @media screen and (min-width: 768px) {
-        @include general-font (0.06em, 1.66, 26px, 900);
-}
     @media screen and (min-width: 1200px) {
+        max-width: 696px;
         @include general-font (0.06em, 1.36, 44px, 900);
     }
 }
