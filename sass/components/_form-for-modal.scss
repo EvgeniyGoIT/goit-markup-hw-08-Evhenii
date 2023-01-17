@@ -15,6 +15,14 @@
         padding-left: 42px;
         @include general-font (0.01em, 1.17, 12px, 400);
         font-style: normal;
+
+        @media screen and (max-width: 479px) {
+            padding-top: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            padding-left: 36px;
+            height: clamp(20px, 8vh, 40px);
+            }   
         
     }
     .form__field {
@@ -31,6 +39,10 @@
         &:hover > .form__icon-label {
             color:$color-accent;
         }
+
+        @media screen and (max-width: 479px) {
+            margin-bottom: 5px;
+            }   
         }
 
     
@@ -40,6 +52,14 @@
         margin-bottom: 12px;
         @include general-font (0.03em, 1.15, 20px, 700);
         text-align: center;
+
+        @media screen and (max-width: 450px) {
+            @include general-font (0.03em, 1.15, calc(12px + 8*(10vw/450)), 700);
+            margin-bottom: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            }   
     }
     textarea {
         padding: 12px;
@@ -51,19 +71,28 @@
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        // @media screen and (max-width: 479px) {
-        //     height: 80px;
-        // }
+        @media screen and (max-width: 479px) {
+            height: clamp(60px, 10vh, 120px);
+            padding: 8px;
+            }   
+            @media screen and (max-width: 319px) {
+                height: clamp(50px, 8vh, 120px);
+                padding: 8px;
+                }   
          }
          
     .form__field-textarea {
     margin-bottom: 20px;
     cursor: pointer;
+    
         &:focus-within textarea,
         &:hover textarea {
         border: 1px solid $color-accent;
         outline: none;
         }
+        @media screen and (max-width: 479px) {
+            margin-bottom: 10px;
+            }   
     }
       textarea:placeholder-shown {
         font-weight: 400;
@@ -76,6 +105,10 @@
         display: block;
         margin-bottom: 4px;
         @include general-font (0.01em, 1.17, 12px, 400);
+
+        @media screen and (max-width: 479px) {
+            @include general-font (0.01em, 1.17, calc(10px + 2*(10vw/480)), 400);            } 
+        
     }
     .form__button-box {
         display: flex;
@@ -92,8 +125,14 @@
         border: 1px transparent;
         border-radius: 4px;
         padding: 10px 32px;
-        min-width: 200px;
+        width: 200px;
         text-align: center;
+
+        @media screen and (max-width: 450px) {
+            @include general-font (0.06em, 1.88, calc(12px + 4*(10vw/450)), 700);
+            width: clamp(150px, 10vh, 200px);
+            padding: 10px 12px;
+            }   
     }
     
     
@@ -153,7 +192,10 @@
 
         @media screen and (max-width: 450px) {
             flex-wrap: wrap;
-        }   
+            @include general-font (0.03em, 1.17, calc(6px + 6*(80vw/450)), 400);
+            margin-bottom: 15px;
+            }   
+         
         @media screen and (min-width: 1200px) {
             @include general-font (0.03em, 1.71, 14px, 400);
         }
